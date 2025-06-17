@@ -57,11 +57,34 @@ const VerseOfTheDay = () => {
   const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
   const verse = verses[dayOfYear % verses.length];
 
+  const encodedVerse = encodeURIComponent(`"${verse.text}" — ${verse.ref}`);
+  const whatsappUrl = `https://api.whatsapp.com/send?text=${encodedVerse}`;
+  const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com&quote=${encodedVerse}`;
+
   return (
-    <div className="bg-dark text-white p-4 rounded mb-4">
+    <div className="bg-dark text-white p-4 rounded mb-4 animate__animated animate__fadeIn">
       <h4 className="fw-bold">Verse of the Day</h4>
       <p className="fs-5 mb-1"><em>"{verse.text}"</em></p>
-      <small>— {verse.ref}</small>
+      <small className="d-block mb-3">— {verse.ref}</small>
+
+      <div className="d-flex gap-2">
+        <a
+          className="btn btn-success btn-sm"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📲 Share on WhatsApp
+        </a>
+        <a
+          className="btn btn-primary btn-sm"
+          href={facebookUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          👍 Share on Facebook
+        </a>
+      </div>
     </div>
   );
 };
