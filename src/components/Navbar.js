@@ -26,6 +26,16 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
+            <li className="nav-item">
+              <a
+                className="nav-link text-warning fw-bold"
+                href="https://hope-step.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🆘 Get Help
+              </a>
+            </li>
           </ul>
         </div>
       </div>
