@@ -17,7 +17,7 @@ const Resources = () => {
       <h3 className="mt-4">🎥 Recommended Videos</h3>
       <ul>
         <li><a href="https://www.youtube.com/watch?v=ItP6gAc1fGg" target="_blank" rel="noopener noreferrer">"The Kingdom of God" – BibleProject</a></li>
-        <li><a href="https://www.youtube.com/watch?v=I0p4Q15AOQw" target="_blank" rel="noopener noreferrer">"What Did Jesus Mean by Kingdom of God?" – N.T. Wright</a></li>
+        <li><a href="https://youtu.be/wdJdkN-mW2s?si=a1XXgvesz68nYChh" target="_blank" rel="noopener noreferrer">"What Did Jesus Mean by Kingdom of God?" – Got Questions</a></li>
         <li><a href="https://youtu.be/2zEjfIdbjX0?si=TYLTDF-hlDyk1Jgf" target="_blank" rel="noopener noreferrer">"Living as Kingdom Citizens" – by Dr. Myles Munroe</a></li>
       </ul>
 
