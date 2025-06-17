@@ -62,7 +62,10 @@ const VerseOfTheDay = () => {
   const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com&quote=${encodedVerse}`;
 
   return (
-    <div className="bg-dark text-white p-4 rounded mb-4 animate__animated animate__fadeIn">
+    <div
+      className="bg-dark text-white p-4 rounded mb-4 mx-auto animate__animated animate__fadeIn"
+      style={{ maxWidth: '500px' }}
+    >
       <h4 className="fw-bold">Verse of the Day</h4>
       <p className="fs-5 mb-1"><em>"{verse.text}"</em></p>
       <small className="d-block mb-3">— {verse.ref}</small>
